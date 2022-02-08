@@ -1,0 +1,50 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .circle {
+        width: 40ex;
+        height: 40ex;
+        background-color: orange;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        animation-name: circlegetbig;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+    }
+    .container {
+        position: absolute;
+        width: 600px;
+        text-align:  center;
+        p{
+            font-size: 40px;
+            color: white;
+        }
+    }
+    @keyframes circlegetbig {
+        0% {
+        opacity: 0;
+        }
+        90% {
+            border-radius: 10%;
+        }
+        100% {
+            width: 200%;
+            height: 400%;
+            border-radius: 0%;
+            opacity: 1;
+        }
+        
+    }
+
+}
